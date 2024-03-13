@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(197, 224, 186);
+  background-color: #ded7c7;
 }
 .app-container {
   background-color: rgb(255, 255, 255, 0.5);
@@ -7,17 +7,49 @@ body {
   margin: 0 auto;
   padding: 25px;
   border-radius: 10px;
+  box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.3);
 }
 h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #666960;
+}
+
+.material-symbols-outlined {
+  color: black;
+  margin-left: 10px;
+  font-size: 50px;
 }
 
 select {
   width: 90%;
   padding: 10px;
   border-radius: 10px;
+  background-color: #c8a288;
+  font-size: 16px;
+  border: 1px solid #c8a288;
+  color: white;
+  margin-bottom: 30px;
+}
+
+#time-1 {
+  color: #c8a288;
+}
+
+#time-2 {
+  color: #c8a288;
 }
 
 footer {
   text-align: center;
   margin-top: 15px;
 }
+
+footer a {
+  color: #7a7a6a;
+  text-decoration: none;
+}
+
+/* terracotta #C8A288 */
+/* green #7A7A6A */
+/* creamy yellow #DED7C7 */
