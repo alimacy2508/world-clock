@@ -1,6 +1,23 @@
-h1 {
-  text-align: center;
+body {
+  background-color: rgb(197, 224, 186);
 }
+.app-container {
+  background-color: rgb(255, 255, 255, 0.5);
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 10px;
+}
+h1 {
+}
+
+select {
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 footer {
   text-align: center;
+  margin-top: 15px;
 }
