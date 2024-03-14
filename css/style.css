@@ -1,5 +1,7 @@
 body {
   background-color: #ded7c7;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .app-container {
   background-color: rgb(255, 255, 255, 0.5);
@@ -27,17 +29,28 @@ select {
   border-radius: 10px;
   background-color: #c8a288;
   font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   border: 1px solid #c8a288;
   color: white;
   margin-bottom: 30px;
 }
 
+.city {
+  display: flex;
+  justify-content: space-between;
+}
+
 #time-1 {
   color: #c8a288;
+  font-size: 36px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 #time-2 {
   color: #c8a288;
+  font-size: 36px;
 }
 
 footer {
