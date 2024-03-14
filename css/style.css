@@ -36,9 +36,25 @@ select {
   margin-bottom: 30px;
 }
 
+h2 {
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.date {
+  margin-bottom: 25px;
+  color: rgb(0, 0, 0, 0.5);
+}
 .city {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid rgb(122, 122, 106, 0.4);
+  padding-top: 15px;
+}
+
+.city:last-child {
+  border: none;
 }
 
 #time-1 {
@@ -48,9 +64,18 @@ select {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+#time-1 small {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
 #time-2 {
   color: #c8a288;
   font-size: 36px;
+}
+#time-2 small {
+  font-size: 20px;
+  vertical-align: middle;
 }
 
 footer {
