@@ -17,12 +17,6 @@ h1 {
   color: #666960;
 }
 
-.material-symbols-outlined {
-  color: black;
-  margin-left: 10px;
-  font-size: 50px;
-}
-
 select {
   width: 90%;
   padding: 10px;
@@ -67,6 +61,27 @@ h2 {
 .time small {
   font-size: 20px;
   vertical-align: middle;
+}
+
+button {
+  border-radius: 10px;
+  background: #7a7a6a;
+  border: 1px solid #7a7a6a;
+  margin-top: 10px;
+
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+button .material-symbols-outlined {
+  font-size: 40px;
+}
+
+button a {
+  color: white;
 }
 
 footer {
