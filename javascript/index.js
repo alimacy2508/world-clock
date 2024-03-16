@@ -3,7 +3,7 @@ function updateTime() {
 
   let londonElement = document.querySelector("#london");
   let londonDateElement = londonElement.querySelector(".date");
-  let londonTimeElement = londonElement.querySelector("#time-1");
+  let londonTimeElement = londonElement.querySelector(".time");
 
   let londonDtElement = moment.tz("Europe/London");
 
@@ -16,7 +16,7 @@ function updateTime() {
 
   let sanJuanElement = document.querySelector("#san-juan");
   let sanJuanDateElement = sanJuanElement.querySelector(".date");
-  let sanJuanTimeElement = sanJuanElement.querySelector("#time-2");
+  let sanJuanTimeElement = sanJuanElement.querySelector(".time");
 
   let sanJuanDtElement = moment.tz("America/Puerto_Rico");
 
@@ -28,3 +28,23 @@ function updateTime() {
 
 updateTime();
 setInterval(updateTime, 1000);
+
+function updateCity(event) {
+  let citiesTimezone = event.target.value;
+  let cityTime = moment().tz(citiesTimezone);
+  let citiesElement = document.querySelector("#cities");
+
+  citiesElement.innerHTML = `
+   <div class="city">
+  <div>
+            <h2>${citiesTimezone}</h2>
+            <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
+          </div>
+          <div class="time">${cityTime.format(
+            "h:mm:ss"
+          )}<small>${cityTime.format("A")}</small> </div>
+        </div>`;
+}
+
+let citiesSelectElement = document.querySelector("#world-clock-dropdown");
+citiesSelectElement.addEventListener("change", updateCity);

@@ -57,23 +57,14 @@ h2 {
   border: none;
 }
 
-#time-1 {
+.time {
   color: #c8a288;
   font-size: 36px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-#time-1 small {
-  font-size: 20px;
-  vertical-align: middle;
-}
-
-#time-2 {
-  color: #c8a288;
-  font-size: 36px;
-}
-#time-2 small {
+.time small {
   font-size: 20px;
   vertical-align: middle;
 }
