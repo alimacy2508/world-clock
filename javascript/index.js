@@ -30,6 +30,35 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+  // Athens
+  let athensElement = document.querySelector("#athens");
+  if (athensElement) {
+    let athensDateElement = athensElement.querySelector(".date");
+    let athensTimeElement = athensElement.querySelector(".time");
+
+    let athensDtElement = moment.tz("Europe/Athens");
+
+    athensDateElement.innerHTML = athensDtElement.format("MMMM Do YYYY");
+    athensTimeElement.innerHTML = athensDtElement.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
+  // Tokyo
+
+  let tokyoElement = document.querySelector("#tokyo");
+  if (tokyoElement) {
+    let tokyoDateElement = tokyoElement.querySelector(".date");
+    let tokyoTimeElement = tokyoElement.querySelector(".time");
+
+    let tokyoDtElement = moment.tz("Asia/Tokyo");
+
+    tokyoDateElement.innerHTML = tokyoDtElement.format("MMMM Do YYYY");
+    tokyoTimeElement.innerHTML = tokyoDtElement.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 updateTime();
