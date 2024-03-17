@@ -8,6 +8,7 @@ body {
   max-width: 650px;
   margin: 0 auto;
   padding: 25px;
+  padding-bottom: 10px;
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.3);
 }
@@ -15,6 +16,14 @@ h1 {
   font-size: 40px;
   text-align: center;
   color: #666960;
+  margin-bottom: 15px;
+}
+
+h1 .material-symbols-outlined {
+  font-size: 40px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: px;
 }
 
 select {
@@ -68,7 +77,6 @@ button {
   background: #7a7a6a;
   border: 1px solid #7a7a6a;
   margin-top: 10px;
-
   transition: all 200ms ease-in-out;
 }
 
